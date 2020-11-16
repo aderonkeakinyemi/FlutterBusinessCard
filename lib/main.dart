@@ -41,40 +41,41 @@ class MyApp extends StatelessWidget {
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold),
                   ),
-                  // SizedBox(height: 10.0),
-                  Container(
+                  SizedBox(
+                      height: 20.0,
+                      width: 250.0,
+                      child: Divider(color: Colors.teal.shade100)),
+                  Card(
                       color: Colors.white,
-                      padding:
-                          EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
                       margin: EdgeInsets.all(20.0),
-                      child: Row(
-                        children: [
-                          Icon(Icons.phone, color: Colors.teal),
-                          SizedBox(width: 10.0),
-                          Text(
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: ListTile(
+                          leading: Icon(Icons.phone, color: Colors.teal),
+                          title: Text(
                             '+244 566 888',
                             style:
                                 TextStyle(color: Colors.teal, fontSize: 20.0),
-                          )
-                        ],
+                          ),
+                        ),
                       )),
-                  Container(
+                  Card(
                     margin:
                         EdgeInsets.symmetric(vertical: 0.0, horizontal: 20.0),
-                    padding: EdgeInsets.all(10.0),
+                    // padding: EdgeInsets.all(10.0),
                     color: Colors.white,
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.email,
-                          color: Colors.teal,
-                        ),
-                        SizedBox(width: 10.0),
-                        Text(
-                          'aderonkeakiyemi@gmail.com',
-                          style: TextStyle(color: Colors.teal, fontSize: 20.0),
-                        )
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: ListTile(
+                          leading: Icon(
+                            Icons.email,
+                            color: Colors.teal,
+                          ),
+                          title: Text(
+                            'aderonkeakiyemi@gmail.com',
+                            style:
+                                TextStyle(color: Colors.teal, fontSize: 20.0),
+                          )),
                     ),
                   ),
                 ],
